@@ -29,7 +29,7 @@ enterprise-ai-platform/
 
 ## 🏗️ Architecture
 
-![Architecture](docs/architecture.png)
+![Architecture](architecture.png)
 
 **Flow:**  
 1. User interacts via the **frontend UI** (S3 + CloudFront).  

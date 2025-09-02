@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Enterprise AI Chat</title></head>
+<body>
+<h2>Enterprise AI Chat Platform</h2>
+<label for="model">Choose a model:</label>
+<select id="model">
+  <option>ChatGPT</option>
+  <option>Claude</option>
+  <option>Gemini</option>
+  <option>Grok</option>
+</select>
+<br><br>
+<textarea id="input" placeholder="Type your message"></textarea>
+<button onclick="sendMessage()">Send</button>
+<pre id="output"></pre>
+<script>
+async function sendMessage() {
+  const model = document.getElementById("model").value;
+  const input = document.getElementById("input").value;
+  document.getElementById("output").innerText = `[${model}] response: (mock)`;
+}
+</script>
+</body>
+</html>

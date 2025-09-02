@@ -1,0 +1,11 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: enterprise-ai-backend
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+      - name: backend
+        image: backend:latest
